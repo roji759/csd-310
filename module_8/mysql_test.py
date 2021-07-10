@@ -1,14 +1,20 @@
+""" 
+    Rogelio Orozco
+    07.09.21
+    establish and test connection to database
+"""
 
+""" import statements """
 import mysql.connector
 from mysql.connector import errorcode
 
+""" database config object """
 config = {
-    "user": "pysport_user",
-    "passoword": "MySQL8IsGreat",
+    "user": "pysports_user",
+    "password": "MySQL8IsGreat!",
     "host": "127.0.0.1",
     "database": "pysports",
     "raise_on_warnings": True
-    
 }
 
 try:
